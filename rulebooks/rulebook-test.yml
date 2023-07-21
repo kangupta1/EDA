@@ -1,0 +1,6 @@
+    - name: Check REST API Endpoint
+      ansible.eda.url_check:
+        urls: 
+          - "https://controller-kg/api/v2/"
+        delay: 10
+        verify_ssl: False
